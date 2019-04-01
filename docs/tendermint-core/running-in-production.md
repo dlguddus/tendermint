@@ -281,7 +281,6 @@ Cosmos network.
 ## Configuration parameters
 
 - `p2p.flush_throttle_timeout`
-- `p2p.max_packet_msg_payload_size`
 - `p2p.send_rate`
 - `p2p.recv_rate`
 
@@ -292,10 +291,9 @@ flush throttle timeout and increase other params.
 ```
 [p2p]
 
-send_rate=20000000 # 2MB/s
-recv_rate=20000000 # 2MB/s
+send_rate=2000000 # 2MB/s
+recv_rate=2000000 # 2MB/s
 flush_throttle_timeout=10
-max_packet_msg_payload_size=10240 # 10KB
 ```
 
 - `mempool.recheck`
